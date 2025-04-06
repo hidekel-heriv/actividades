@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Currículum - Hidekel Hernández</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #edf6f9;
+      color: #2e2e2e;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #83c5be, #cdeae4);
+      padding: 2.5rem 1rem;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+    }
+
+    .perfil {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 4px solid white;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+      margin-bottom: 1rem;
+      transition: transform 0.3s ease;
+    }
+
+    .perfil:hover {
+      transform: scale(1.1);
+    }
+
+    .section {
+      padding: 1.5rem 1.5rem;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-size: 1.8rem;
+      color: #006d77;
+      border-bottom: 2px solid #83c5be;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Para las secciones que usan los círculos de viñetas */
+    ul {
+      list-style-type: disc; /* Círculos */
+      padding-left: 2rem; /* Alinea los puntos con el texto */
+    }
+
+    li {
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background-color: #006d77;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      border-top: 4px solid #83c5be;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #006d77;
+    }
+
+    .icon {
+      margin-right: 0.5rem;
+    }
+
+    .columns {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    .column {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .column h3 {
+      font-size: 1.5rem;
+      color: #006d77;
+    }
+
+    .column ul {
+      margin: 0;
+    }
+
+    .fortalezas ul {
+      list-style: none; 
+    }
+
+    .fortalezas li {
+      margin-bottom: 1rem;
+      position: relative;
+      padding-left: 2rem; 
+    }
+
+    .fortalezas li::before {
+      content: '✓'; 
+      font-size: 1.5rem;
+      position: absolute;
+      left: 0;
+      color: #006d77; 
+      top: 0; 
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <img src="foto.png" alt="Mi Foto" class="perfil" />
+    <h1>Hidekel Hernández</h1>
+    <p>Desarrolladora .NET</p>
+    <p><i class="fas fa-envelope icon"></i><a href="mailto:hhidekel@gmail.com">hhidekel@gmail.com</a></p>
+  </header>
+
+  <section class="section">
+    <h2>Formación Académica</h2>
+    <ul>
+        <li>
+          <strong>Ingeniería en Sistemas Computacionales</strong> – En curso<br />
+          Tecnológico de Estudios Superiores de Ecatepec.
+        </li>
+        <li>
+          <strong>Ingeniería en Bioquímica</strong><br />
+          Escuela Nacional de Ciencias Biológicas – [2019]
+        </li>
+      </ul>
+    </section>
+
+  <section class="section">
+    <h2>Experiencia Profesional</h2>
+    <ul>
+      <li>
+        <strong>Desarrolladora .NET – Grupo Salinas</strong><br />
+        Marzo 2024 – Actualidad<br />
+        - Desarrollo de aplicaciones con .NET y C#<br />
+        - Integración de bases de datos SQL<br />
+        - Uso de DBeaver y aprendizaje de Vertica Data Platform
+      </li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Habilidades Técnicas | Actualmente Aprendiendo</h2>
+    <div class="columns">
+      <div class="column">
+        <h3>Habilidades Técnicas</h3>
+        <ul>
+          <li><strong>Lenguajes:</strong> C#, Python, SQL</li>
+          <li><strong>Herramientas:</strong> Visual Studio, VS Code, DBeaver</li>
+          <li><strong>Bases de datos:</strong> SQL Server, Vertica</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3>Actualmente Aprendiendo</h3>
+        <ul>
+          <li>Vertica Data Platform</li>
+          <li>Buenas prácticas backend en .NET</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fortalezas">
+    <h2>Fortalezas</h2>
+    <ul>
+      <li>Rápido aprendizaje y adaptabilidad.</li>
+      <li>Trabajo colaborativo.</li>
+      <li>Enfoque en soluciones.</li>
+      <li>Integración de ciencia y tecnología.</li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; 2025 Hidekel Hernández – Todos los derechos reservados
+  </footer>
+</body>
+</html>
